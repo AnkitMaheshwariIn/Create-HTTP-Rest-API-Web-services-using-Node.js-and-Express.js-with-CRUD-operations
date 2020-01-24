@@ -11,6 +11,8 @@ const app = express();
 app.use(express.json());
 // use it before all route definitions
 // allowing below URL to access these APIs end-points
+// you can replace this URL(http://localhost:8100) with your
+// application URL from where you are calling these APIs
 app.use(cors({origin: 'http://localhost:8100'}));
 
 /* this '/items' URL will have two end-points:
